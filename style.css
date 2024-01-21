@@ -863,6 +863,7 @@ section {
     padding: 30px;
     text-align: start;
     gap: 15px;
+    justify-content: space-around;
 }
 
 @media (max-width: 767px) {
