@@ -462,6 +462,31 @@ a.button:hover {
     text-decoration: none;
 }
 
+#cfs-button{
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 6px 20px;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    /* margin-top: 10%; */
+    /* margin-bottom: 0%; */
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+#cfs-button:hover{
+    /* change the direction of the change here */
+    background-color: rgb(170, 3, 3);
+    color: rgb(255, 255, 255);
+    cursor: not-allowed;
+}
+
 .black-text {
     color: whitesmoke;
     margin-bottom: 0%;
@@ -1552,4 +1577,35 @@ th {
         width: 100%;
         /* Make the button full width on smaller screens */
     }
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.question-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.question {
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+.answer {
+    color: #f7f7f7;
+    display: none;
+    text-align: left;
 }
