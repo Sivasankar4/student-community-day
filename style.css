@@ -169,12 +169,13 @@ footer {
     display: flex;
     flex-direction: row;
     /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
-    gap: 40px;
+    gap: 20px;
     text-align: center;
     margin-bottom: 100px;
     /* Adjust this value to set the desired gap */
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
+    width: 100%;
 }
 
 .speakers-wrapper {
@@ -247,7 +248,8 @@ footer {
     text-align: center;
     flex-wrap: wrap;
     /* Added to allow wrapping to the next line */
-    justify-content: center;
+    justify-content:center;
+    width: 100%;
 }
 
 .chief-guest-card {
@@ -422,6 +424,7 @@ footer {
     }
 }
 
+
 .button1{
     display: inline-block;
     cursor: pointer;
@@ -431,14 +434,13 @@ footer {
     border-radius: 10px;
     padding: 6px 20px;
     text-align: center;
-    text-decoration: none;
     transition: 0.5s;
     position: relative;
-    margin: 10px;
     /* margin-top: 10%; */
     /* margin-bottom: 0%; */
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    text-wrap: nowrap;
 }
 
 .button1:hover {
@@ -733,6 +735,7 @@ a.myButton:focus {
     flex-direction: row;
     gap: 2%;
     justify-content: center;
+    font-size: 14px;
 
 }
 
@@ -1192,6 +1195,15 @@ th {
     white-space: nowrap;
 }
 
+#schedule{
+    border: 2px dotted whitesmoke;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
 .breaks {
     background-color: #162e15cc;
     text-align: center;
@@ -1200,51 +1212,20 @@ th {
 @media only screen and (max-width: 600px) {
     table {
         border: 0px solid #000000;
+        width:100%;
+        left: 0;
     }
 
-    th,
     td {
-        display: block;
         width: 100%;
-        box-sizing: border-box;
-    }
-
-    th {
-        text-align: center;
-        display: none;
-    }
-
-    td {
         text-align: left;
         border-bottom: 0px solid #000000;
         padding: 8px;
     }
 
-    td:last-child {
-        border-bottom: 0;
-    }
-
-    tr {
-        margin-bottom: 10px;
-        border: 5px solid #000000;
-        margin-top: 10px;
-        background-color: #404041;
-
-    }
-
-    .breaks {
-        background-color: #162e15cc;
-        text-align: center;
-    }
-
-    /* Background color for the timing column in mobile */
-    .timing {
-        background-color: #141414;
-        /* You can change this color */
-        color: white;
-        /* Text color for better visibility */
-        padding-top: 10px;
-        padding-bottom: 10px;
+    #schedule{
+        padding : 0;
+        width: 100%;
     }
 }
 
@@ -1343,7 +1324,8 @@ th {
     #speakers {
         display: flex;
         flex-direction: column;
-
+        width: 90%;
+        flex-wrap: wrap;
     }
 
     .speaker-card {
@@ -1464,7 +1446,7 @@ th {
     #chief-guests {
         display: flex;
         flex-direction: column;
-
+        width: 90% ;
     }
 
     .chief-guest-card {
@@ -1617,19 +1599,19 @@ th {
 }
 
 .question-box {
-    background-color: #f0f0f0;
+    background-color: rgb(210, 207, 207);
     padding: 10px;
     border-radius: 5px;
 }
 
 .question {
-    color: #333;
+    color: #282828;
     margin: 0;
     text-align: left;
 }
 
 .answer {
-    color: #f7f7f7;
+    color: #dbdbdb;
     display: none;
-    text-align: left;
+    text-align: start;
 }
