@@ -593,6 +593,12 @@ a.myButton:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 600px) {
+    .day-button {
+        padding: 10px 10px;
+    }
+}
+
 /* Added arrow-like shape */
 .day-button::after {
     content: "";
@@ -785,6 +791,8 @@ section {
     padding: 10px;
     margin-top: 15px;
 }
+
+
 
 #map {
     height: 300px;
@@ -1196,18 +1204,31 @@ th {
 }
 
 #schedule{
-    border: 2px dotted whitesmoke;
-    border-radius: 15px;
-    padding: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
     
+}
+
+#schedule img{
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    border: 2px whitesmoke solid;
 }
 
 .breaks {
     background-color: #162e15cc;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    #schedule img{
+        width: 80%;
+        border: 1px whitesmoke solid;
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     table {
@@ -1228,6 +1249,13 @@ th {
         width: 100%;
     }
 }
+
+#tracks-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
 
 
 
