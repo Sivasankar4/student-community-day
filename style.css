@@ -1172,7 +1172,12 @@ td:first-child {
     background-color: rgb(37, 16, 16);
 } */
 
-
+#student-line{
+    color: red;
+    background-color: #000000;
+    margin: 0;
+    padding:0.8em;
+}
 
 table {
     width: 50%;
