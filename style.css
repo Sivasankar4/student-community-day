@@ -116,7 +116,7 @@ nav a:hover::before {
 main {
     padding: 5em;
     /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-    background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+    background: linear-gradient(76.8deg, rgb(57, 4, 63) 3.6%, rgb(36, 31, 98) 90.4%);
 
 
 }
@@ -1632,7 +1632,7 @@ th {
 }
 
 .question-box {
-    background-color: rgb(210, 207, 207);
+    background-color: rgb(230, 226, 226);
     padding: 10px;
     border-radius: 5px;
 }
