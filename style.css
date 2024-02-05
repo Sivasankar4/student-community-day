@@ -112,7 +112,6 @@ nav a:hover::before {
 
 
 
-
 main {
     padding: 5em;
     /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
@@ -1049,7 +1048,9 @@ section {
 
 a {
     text-decoration: none;
+    color: rgb(140, 166, 201);
 }
+
 
 
 
@@ -1314,6 +1315,10 @@ th {
 .social:hover {
     transform: scale(1.2);
     color: white;
+}
+
+.social :active{
+    opacity: 0.8;
 }
 
 @media only screen and (max-width: 600px) {
