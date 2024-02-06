@@ -1261,9 +1261,9 @@ th {
 }
 
 .pdf-document {
-    width: 60%; /* Make the PDF fill its container */
-    height: 800px; /* Set a fixed height for the PDF viewer */
-    max-width: 60%;
+    width: 100%; /* Make the PDF fill its container */
+    height: 90vh; /* Make the PDF fill its container height */
+    max-width: 100%;
     border: 2px solid #ccc; /* Add a border around the PDF viewer */
     border-radius: 8px; /* Optional: Add some border radius for aesthetics */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
@@ -1280,6 +1280,19 @@ th {
 
 .pdf-document::-webkit-scrollbar-thumb:hover {
     background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .pdf-document {
+        height: 80vh; /* Set a fixed height for smaller screens */
+    }
+}
+
+/* Adjust height for mobile screens */
+@media screen and (max-width: 480px) {
+    .pdf-document {
+        height: 60vh; /* Set a fixed height for mobile screens */
+    }
 }
 
 
