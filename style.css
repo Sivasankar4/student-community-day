@@ -7,7 +7,6 @@ body {
     line-height: 1.5;
     text-align: center;
     color: white;
-
 }
 
 @media (max-width: 768px) {
@@ -21,7 +20,6 @@ body {
         text-align: center;
         color: white;
     }
-
 }
 
 @font-face {
@@ -74,7 +72,7 @@ nav a {
 }
 
 nav a::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -84,17 +82,11 @@ nav a::before {
     transform: scaleX(0);
     transform-origin: 100%;
     transition: transform 0.5s ease;
-
 }
 
 nav a:hover::before {
     transform: scaleX(1);
-
 }
-
-
-
-
 
 #menu-icon {
     display: block;
@@ -110,14 +102,12 @@ nav a:hover::before {
     /* Simplified margin */
 }
 
-
-
 main {
     padding: 5em;
     /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-    background: linear-gradient(76.8deg, rgb(57, 4, 63) 3.6%, rgb(36, 31, 98) 90.4%);
-
-
+    background: linear-gradient(76.8deg,
+            rgb(57, 4, 63) 3.6%,
+            rgb(36, 31, 98) 90.4%);
 }
 
 footer {
@@ -173,7 +163,7 @@ footer {
     margin-bottom: 100px;
     /* Adjust this value to set the desired gap */
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -247,7 +237,7 @@ footer {
     text-align: center;
     flex-wrap: wrap;
     /* Added to allow wrapping to the next line */
-    justify-content:center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -347,7 +337,6 @@ footer {
     height: auto;
     display: block;
     transition: 0.5s;
-
 }
 
 .sponsor-card img:hover {
@@ -388,7 +377,6 @@ footer {
     display: block;
     border-radius: 10px;
     transition: 0.5s;
-
 }
 
 .collaboration-card img:hover {
@@ -410,7 +398,6 @@ footer {
         position: relative;
         width: auto;
         height: 100%;
-
     }
 
     .collaboration-card img {
@@ -419,12 +406,10 @@ footer {
         display: block;
         border-radius: 10px;
         transition: 0.5s;
-
     }
 }
 
-
-.button1{
+.button1 {
     display: inline-block;
     cursor: pointer;
     color: white;
@@ -448,10 +433,7 @@ footer {
     color: #000000;
     text-decoration: none;
     box-shadow: 0 0 20px rgba(133, 133, 133, 0.7);
-
 }
-
-
 
 /* registration  */
 #registration {
@@ -463,7 +445,10 @@ footer {
 a.button {
     display: inline-block;
     cursor: pointer;
-    background-image: linear-gradient(to right, #2c253a 0%, #2a0845 51%, #292236 100%);
+    background-image: linear-gradient(to right,
+            #2c253a 0%,
+            #2a0845 51%,
+            #292236 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -519,7 +504,6 @@ a.button:hover {
 .black-text {
     color: whitesmoke;
     margin-bottom: 0%;
-
 }
 
 .register-card {
@@ -545,8 +529,6 @@ a.button:hover {
 ul {
     text-align: left;
 }
-
-
 
 /* Change styles when the link is hovered */
 a.button:hover {
@@ -575,7 +557,10 @@ a.myButton:focus {
 .day-button {
     display: inline-block;
     cursor: pointer;
-    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+    background-image: linear-gradient(to right,
+            #da22ff 0%,
+            #9733ee 51%,
+            #da22ff 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -606,7 +591,7 @@ a.myButton:focus {
     height: 0;
     border-style: solid;
     border-width: 6px 6px 0;
-    border-color: #713ABE transparent transparent transparent;
+    border-color: #713abe transparent transparent transparent;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -630,7 +615,7 @@ a.myButton:focus {
 /* Styling for active state */
 .day-button:active,
 .day-button.selected {
-    background-color: #713ABE;
+    background-color: #713abe;
     /* Change the color for active state */
 }
 
@@ -645,7 +630,6 @@ a.myButton:focus {
     width: 100%;
     height: 550px;
 }
-
 
 #topimage img {
     max-width: 80%;
@@ -676,7 +660,6 @@ a.myButton:focus {
     }
 }
 
-
 #artboard {
     width: 30%;
     height: max-content;
@@ -691,7 +674,6 @@ a.myButton:focus {
     height: 150px;
     text-align: center;
 } */
-
 
 /* .schedule:hover {
     transform: scale(1.05);
@@ -715,8 +697,6 @@ a.myButton:focus {
     background-color: #ddd;
 }
 
-
-
 #home {
     border-color: black;
     /* Adjust the color and thickness as needed */
@@ -732,7 +712,6 @@ a.myButton:focus {
     color: rgb(255, 255, 255);
     text-align: start;
     justify-content: start;
-
 }
 
 .flex-container {
@@ -741,7 +720,6 @@ a.myButton:focus {
     gap: 2%;
     justify-content: center;
     font-size: 14px;
-
 }
 
 @media (max-width: 767px) {
@@ -779,10 +757,9 @@ section {
     /* Adjust the margin as needed */
 }
 
-
 #agenda {
     color: whitesmoke;
-    background: linear-gradient(135deg, #C56CD6 0%, #3425AF 100%);
+    background: linear-gradient(135deg, #c56cd6 0%, #3425af 100%);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
@@ -791,13 +768,10 @@ section {
     margin-top: 15px;
 }
 
-
-
 #map {
     height: 300px;
     /* Adjust the height as needed */
     width: 100%;
-
 }
 
 #map-place {
@@ -829,7 +803,6 @@ section {
     flex-direction: row;
     margin-left: 10px;
     gap: 10px;
-
 }
 
 #map-link {
@@ -844,7 +817,10 @@ section {
 #map-button {
     display: inline-block;
     cursor: pointer;
-    background-image: linear-gradient(to right, #2c253a 0%, #2a0845 51%, #292236 100%);
+    background-image: linear-gradient(to right,
+            #2c253a 0%,
+            #2a0845 51%,
+            #292236 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -859,7 +835,6 @@ section {
     text-transform: uppercase;
     background-size: 200% auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
 }
 
 #map-button:hover {
@@ -885,11 +860,7 @@ section {
     color: #ffffff;
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(236, 236, 236, 0.795);
-
-
 }
-
-
 
 .purpose-card {
     margin-bottom: 50px;
@@ -905,10 +876,7 @@ section {
     gap: 15px;
 }
 
-
-
 @media (max-width: 1069px) {
-
     .purpose-card {
         /* flex-direction: column;
         align-items: center;
@@ -920,12 +888,10 @@ section {
         justify-content: space-evenly;
         /* Adjust spacing for larger screens */
         flex-wrap: wrap;
-
     }
 }
 
-@media (max-width:769px) {
-
+@media (max-width: 769px) {
     #purpose {
         padding: 15px;
     }
@@ -1006,8 +972,6 @@ section {
     border-style: dotted;
 }
 
-
-
 @media only screen and (max-width: 768px) {
     #info {
         flex-direction: column;
@@ -1023,7 +987,6 @@ section {
 }
 
 #about {
-
     margin-bottom: 50px;
     color: white;
     /* background: linear-gradient(135deg, #C56CD6 0%, #3425AF 100%); */
@@ -1051,9 +1014,6 @@ a {
     color: rgb(140, 166, 201);
 }
 
-
-
-
 #contact {
     display: flex;
     flex-direction: row;
@@ -1063,7 +1023,6 @@ a {
     justify-content: space-evenly;
     background-color: #130c12;
     padding: 30px;
-
 }
 
 .contact-card {
@@ -1100,8 +1059,6 @@ a {
     color: whitesmoke;
     text-align: left;
 }
-
-
 
 .tracks {
     color: rgb(255, 255, 255);
@@ -1173,11 +1130,11 @@ td:first-child {
     background-color: rgb(37, 16, 16);
 } */
 
-#student-line{
+#student-line {
     color: red;
     background-color: #000000;
     margin: 0;
-    padding:0.8em;
+    padding: 0.8em;
 }
 
 table {
@@ -1209,13 +1166,12 @@ th {
     white-space: nowrap;
 }
 
-#schedule{
+#schedule {
     margin-top: 40px;
     margin-bottom: 40px;
-    
 }
 
-#schedule img{
+#schedule img {
     width: 50%;
     height: auto;
     margin-top: 50px;
@@ -1229,17 +1185,16 @@ th {
 }
 
 @media only screen and (max-width: 600px) {
-    #schedule img{
+    #schedule img {
         width: 80%;
         border: 1px whitesmoke solid;
     }
 }
 
-
 @media only screen and (max-width: 600px) {
     table {
         border: 0px solid #000000;
-        width:100%;
+        width: 100%;
         left: 0;
     }
 
@@ -1250,22 +1205,28 @@ th {
         padding: 8px;
     }
 
-    #schedule{
-        padding : 0;
+    #schedule {
+        padding: 0;
         width: 100%;
     }
 }
 
 .tracks-container {
-    display: none; /* Hide all tracks by default */
+    display: none;
+    /* Hide all tracks by default */
 }
 
 .pdf-document {
-    width: 100%; /* Make the PDF fill its container */
-    height: calc(100vh - 40px); /* Adjust height to fit viewport minus button height and margin */
-    border: 2px solid #ccc; /* Add a border around the PDF viewer */
-    border-radius: 8px; /* Optional: Add some border radius for aesthetics */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+    width: 90%;
+    /* Make the PDF fill its container */
+    height: calc(100vh - 40px);
+    /* Adjust height to fit viewport minus button height and margin */
+    border: 2px solid #ccc;
+    /* Add a border around the PDF viewer */
+    border-radius: 8px;
+    /* Optional: Add some border radius for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow for depth */
 }
 
 /* Ensure proper scrolling for iframes */
@@ -1278,14 +1239,20 @@ th {
     border-radius: 4px;
 }
 
+@media only screen and (max-width: 600px) {
+    .pdf-document {
+        width: 100%;
+        /* Make the PDF fill its container */
+        height: 70vh;
+        /* Adjust height to fit viewport minus button height and margin */
+    }
+}
 
 #about-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
-
 
 @media only screen and (max-width: 600px) {
     #about-card {
@@ -1294,9 +1261,6 @@ th {
         justify-content: space-around;
         /* Adjust spacing for larger screens */
         flex-wrap: wrap;
-
-
-
     }
 }
 
@@ -1333,7 +1297,7 @@ th {
     color: white;
 }
 
-.social :active{
+.social :active {
     opacity: 0.8;
 }
 
@@ -1355,10 +1319,6 @@ th {
         /* Adjust the height for small screens */
     }
 }
-
-
-
-
 
 @media only screen and (max-width: 768px) {
     .track {
@@ -1388,7 +1348,7 @@ th {
         max-width: none;
         /* Remove max-width */
         height: auto;
-        margin: 0 0 10% 10%
+        margin: 0 0 10% 10%;
     }
 
     .speaker-card img {
@@ -1426,7 +1386,6 @@ th {
         padding: 1.5em;
         /* Adjust the padding to your preference for smaller screens */
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -1441,7 +1400,7 @@ th {
     }
 }
 
-@media only screen and (max-width:705px) {
+@media only screen and (max-width: 705px) {
     #venue {
         display: flex;
         flex-direction: column;
@@ -1449,7 +1408,6 @@ th {
 
     #map-desc {
         line-height: 30px;
-
     }
 
     #registration {
@@ -1500,7 +1458,7 @@ th {
     #chief-guests {
         display: flex;
         flex-direction: column;
-        width: 90% ;
+        width: 90%;
     }
 
     .chief-guest-card {
@@ -1509,7 +1467,7 @@ th {
         max-width: none;
         /* Remove max-width */
         height: auto;
-        margin: 0 0 8% 8%
+        margin: 0 0 8% 8%;
     }
 
     .chief-guest-card img {
@@ -1543,8 +1501,6 @@ th {
 @media only screen and (min-width: 769px) {
     #menu-icon {
         display: none;
-
-
     }
 }
 
@@ -1553,7 +1509,10 @@ th {
         width: 100%;
         height: auto;
         margin: 0%;
-        background-image: linear-gradient(to right, #2c253a 0%, #2a0845 51%, #292236 100%);
+        background-image: linear-gradient(to right,
+                #2c253a 0%,
+                #2a0845 51%,
+                #292236 100%);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 
         /* ----------------------------------------------------------------------------------- */
@@ -1565,14 +1524,12 @@ th {
         flex-direction: column;
         /* Set to column for stacked layout on smaller screens */
     }
-
 }
 
 @media (max-width: 768px) {
     #main {
         font-size: 12px;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -1595,7 +1552,7 @@ th {
     }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
     #about {
         padding-left: 30px;
     }
@@ -1628,7 +1585,6 @@ th {
         width: 100%;
         display: flex;
         flex-direction: row;
-
     }
 }
 
