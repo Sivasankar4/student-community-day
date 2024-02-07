@@ -1257,18 +1257,18 @@ th {
 }
 
 .tracks-container {
-    margin-bottom: 20px; /* Add space between the two containers */
+    display: none; /* Hide all tracks by default */
 }
 
 .pdf-document {
     width: 100%; /* Make the PDF fill its container */
-    height: 90vh; /* Make the PDF fill its container height */
-    max-width: 100%;
+    height: calc(100vh - 40px); /* Adjust height to fit viewport minus button height and margin */
     border: 2px solid #ccc; /* Add a border around the PDF viewer */
     border-radius: 8px; /* Optional: Add some border radius for aesthetics */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
 }
 
+/* Ensure proper scrolling for iframes */
 .pdf-document::-webkit-scrollbar {
     width: 8px;
 }
@@ -1278,30 +1278,14 @@ th {
     border-radius: 4px;
 }
 
-.pdf-document::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-@media screen and (max-width: 768px) {
-    .pdf-document {
-        height: 80vh; /* Set a fixed height for smaller screens */
-    }
-}
-
-/* Adjust height for mobile screens */
-@media screen and (max-width: 480px) {
-    .pdf-document {
-        height: 60vh; /* Set a fixed height for mobile screens */
-    }
-}
-
-
 
 #about-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     #about-card {

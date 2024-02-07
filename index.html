@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Community Day</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="club-logo-final.jpg" >
+    <link rel="icon" href="club-logo-final.jpg">
     <!-- https://aws-cloud-club-student-community-day-2024.vercel.app/ -->
 
 </head>
@@ -74,9 +74,11 @@
                             <path fill="none" stroke="whitesmoke" stroke-linecap="round" stroke-miterlimit="10"
                                 stroke-width="32"
                                 d="m250.5 140.44l-16.51-16.51m60.53 60.53l-11.01-11m55.03 55.03l-11-11.01m60.53 60.53l-16.51-16.51" />
+
+                        </svg><br>
                     </a>
-                    </svg><br>
                     <h4>Register Here!</h4>
+
                 </div>
 
 
@@ -592,10 +594,10 @@
                 <button onclick="showDay('day2')" id="day2Button" class="day-button" type="button">Day 2</button>
             </div>
             <div id="day1" class="tracks-container">
-                <embed class="pdf-document" src="Agenda Day 1.pdf" type="application/pdf" />
+                <iframe src="Agenda Day 1.pdf" frameborder="0" class="pdf-document"></iframe>
             </div>
             <div id="day2" class="tracks-container">
-                <embed class="pdf-document" src="Agenda Day 2.pdf" type="application/pdf" />
+                <iframe src="Agenda Day 2.pdf" frameborder="0" class="pdf-document"></iframe>
             </div>
         </section>
 
@@ -1772,8 +1774,7 @@
 
     <div class="contact-card">
 
-        <a href="https://www.linkedin.com/company/aws-cloud-club-sjit/"><img src="club-logo.jpg"
-                alt="clublogo"></a>
+        <a href="https://www.linkedin.com/company/aws-cloud-club-sjit/"><img src="club-logo.jpg" alt="clublogo"></a>
         <p>This event is organized and managed by AWS Cloud Club SJIT.</p>
     </div>
 
@@ -1856,40 +1857,16 @@
 
 
     document.addEventListener("DOMContentLoaded", function () {
-        // Add smooth scrolling to all links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+        addSmoothScrolling();
+        initializePage();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        var menuIcon = document.getElementById("menu-icon");
-        var navLinks = document.querySelector(".nav-links");
+        const menuIcon = document.getElementById("menu-icon");
+        const navLinks = document.querySelector(".nav-links");
 
         menuIcon.addEventListener("click", function () {
-            // Toggle the display property of the navigation bar only in mobile view
             if (window.innerWidth <= 768) {
                 navLinks.style.display = (navLinks.style.display === "block") ? "none" : "block";
             }
-        });
-
-
-        // Add smooth scrolling to all links in the navigation bar
-        navLinks.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                // Hide the navigation bar after clicking a link only in mobile view
-                if (window.innerWidth <= 768) {
-                    navLinks.style.display = "none";
-                }
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
         });
 
         const nav = document.querySelector("nav");
@@ -1902,46 +1879,9 @@
                 nav.classList.remove("nav-fixed");
             }
         });
-        var currentSelectedButtonId = 'day1Button';
 
-        function showDay(dayId) {
-            // Hide all tracks
-            var allTracks = document.querySelectorAll('.tracks-container');
-            allTracks.forEach(function (track) {
-                track.style.display = 'none';
-            });
-
-            // Remove 'selected' class from the current selected button
-            var currentSelectedButton = document.getElementById(currentSelectedButtonId);
-            if (currentSelectedButton) {
-                currentSelectedButton.classList.remove('selected');
-            }
-
-            // Show the selected day
-            var selectedDay = document.getElementById(dayId);
-            if (selectedDay) {
-                selectedDay.style.display = 'block';
-            }
-
-            // Add 'selected' class to the clicked button
-            var clickedButton = document.getElementById(dayId + 'Button');
-            if (clickedButton) {
-                clickedButton.classList.add('selected');
-                currentSelectedButtonId = dayId + 'Button';
-            }
-        }
-
-        function initializePage() {
-            // Display the tracks for Day 1 initially
-            showDay('day1');
-        }
-
-        // Call the initializePage function when the page is loaded
-        document.addEventListener("DOMContentLoaded", initializePage);
-
-        // Toggle between Day 1 and Day 2 tracks
-        var day1Button = document.getElementById('day1Button');
-        var day2Button = document.getElementById('day2Button');
+        const day1Button = document.getElementById('day1Button');
+        const day2Button = document.getElementById('day2Button');
 
         day1Button.addEventListener('click', function () {
             showDay('day1');
@@ -1950,11 +1890,46 @@
         day2Button.addEventListener('click', function () {
             showDay('day2');
         });
-
     });
 
-    // Initialize with Day 1 tracks
-    showDay('day1');
+    function addSmoothScrolling() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }
+
+    function initializePage() {
+        showDay('day1');
+    }
+
+    function showDay(dayId) {
+        const allTracks = document.querySelectorAll('.tracks-container');
+        allTracks.forEach(function (track) {
+            track.style.display = 'none';
+        });
+
+        const currentSelectedButton = document.querySelector('.selected');
+        if (currentSelectedButton) {
+            currentSelectedButton.classList.remove('selected');
+        }
+
+        const selectedDay = document.getElementById(dayId);
+        if (selectedDay) {
+            selectedDay.style.display = 'block';
+        }
+
+        const clickedButton = document.getElementById(dayId + 'Button');
+        if (clickedButton) {
+            clickedButton.classList.add('selected');
+        }
+    }
+
 
     function toggleAnswer(element) {
         const answer = element.querySelector('.answer');
